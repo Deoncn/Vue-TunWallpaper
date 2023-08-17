@@ -1,0 +1,14 @@
+.v-footer {
+    color: #ccc !important;
+    font-size: 14px;
+}
+
+.v-footer .text-center span {
+    margin-left: 10px;
+}
+
+.v-footer .text-center span a {
+    color: #99cedd;
+    margin-left: 8px;
+    text-decoration: none;
+}

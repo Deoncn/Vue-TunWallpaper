@@ -1,0 +1,57 @@
+.settings .settings-card {
+    margin-top: 5%;
+    padding: 25px
+}
+
+.settings .settings-card .settings-panel {
+    /* color: #5a5a5a; */
+    font-size: 14px
+}
+
+.settings .settings-card .settings-panel .settings-panel-msg {
+    margin-left: 29px;
+    /* color: rgba(0, 0, 0, .42) */
+}
+
+.settings .settings-card .settings-panel-dark {
+    color: #dedede;
+    font-size: 14px
+}
+
+.settings .settings-card .settings-panel-dark .settings-panel-msg {
+    margin-left: 29px;
+    color: hsla(0, 0%, 100%, .42)
+}
+
+.settings .settings-card hr {
+    background-color: #fefefe;
+    border-color: #fefefe
+}
+
+.settings .settings-card .v-icon {
+    font-size: 20px;
+    padding-top: 9px;
+    padding-right: 14px;
+    float: left
+}
+
+.settings .settings-card .v-select {
+    margin-top: 15px
+}
+
+.settings .settings-card .v-select .v-text-field__details {
+    display: none
+}
+
+.settings .settings-card .settings-reset {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    color: rgba(0, 0, 0, .5)
+}
+
+.settings .settings-card .settings-reset-dark {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}

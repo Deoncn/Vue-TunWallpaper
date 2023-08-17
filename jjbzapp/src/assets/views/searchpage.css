@@ -1,0 +1,51 @@
+
+.img-box .down-span,
+.img-box .like-span,
+.img-box .res-span {
+  position: absolute;
+  z-index: 1;
+  color: #fafafa;
+  border-radius: .5rem;
+  padding: 0 4px;
+  font-weight: 700
+}
+
+.img-box .down-span,
+.img-box .res-span {
+  background-color: rgba(50, 50, 50, .25);
+  font-size: 9pt
+}
+
+.img-box .like-span {
+  font-size: 135%
+}
+
+
+.img-box .res-span {
+  left: 7px;
+  top: 7px
+}
+
+.img-box .down-span {
+  right: 7px;
+  top: 7px
+}
+
+.img-box .down-span,
+.img-box .like-span {
+  cursor: pointer
+}
+
+.img-box .down-span a {
+  color: #fafafa;
+  padding: 1px 2px
+}
+
+.img-box .down-span a,
+.img-box .down-span a:active,
+.img-box .down-span a:focus,
+.img-box .down-span a:hover,
+.img-box .down-span a:link,
+.img-box .down-span a:visited {
+  text-decoration: none
+}

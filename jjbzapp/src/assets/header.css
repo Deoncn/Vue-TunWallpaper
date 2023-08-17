@@ -1,0 +1,49 @@
+.v-app-bar .v-toolbar__content .container {
+    display: flex;
+    color: #6c6c6c;
+    padding: 4px 18px 4px 24px;
+}
+
+.v-app-bar .v-toolbar__content .container .v-tabs .v-tabs-bar .v-tab .v-icon {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .38em;
+}
+
+
+.v-app-bar .v-toolbar__content .container .v-toolbar__title {
+    overflow: unset;
+    text-overflow: unset;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .32em;
+    line-height: 48px;
+    margin-right: 12px;
+}
+
+.v-app-bar .v-toolbar__content .container .v-toolbar__title img {
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.v-app-bar .v-toolbar__content .container .spacer {
+    margin: 0 10px;
+    min-width: 120px;
+    font-size: 9px;
+}
+
+a.tabs-float-right.v-tab {
+    margin-left: auto;
+}
+
+
+
+.theme--light .v-tabs>.v-tabs-bar {
+    background-color: #f5f5f5;
+}
+
+.theme--dark .v-tabs>.v-tabs-bar {
+    background-color: hsl(0deg 0% 15%);
+}
