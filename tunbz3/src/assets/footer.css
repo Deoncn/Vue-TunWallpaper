@@ -1,0 +1,17 @@
+.footer {
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #ccc !important;
+    text-align: center;
+    padding: 12px 12px 12px 12px;
+}
+
+.footer span {
+    margin-left: 10px;
+}
+
+.footer span a {
+    color: #99cedd;
+    margin-left: 8px;
+    text-decoration: none;
+}
