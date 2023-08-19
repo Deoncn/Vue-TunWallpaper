@@ -17,12 +17,20 @@ export default {
 </script>
 
 <template>
+  <n-config-provider>
+    <n-layout>
+      <n-layout-header bordered>
+        <TzHeader></TzHeader>
+      </n-layout-header>
 
-  <div>
-    <TzHeader></TzHeader>
-    <TzMain></TzMain>
-    <TzFooter></TzFooter>
+      <n-layout-content content-style="padding: 24px;">
+        <TzMain></TzMain>
+      </n-layout-content>
 
-  </div>
+      <n-layout-footer>
+        <TzFooter></TzFooter>
+      </n-layout-footer>
+    </n-layout>
 
+  </n-config-provider>
 </template>

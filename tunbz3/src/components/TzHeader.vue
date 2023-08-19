@@ -1,70 +1,84 @@
 <template>
-    <n-card>
-    <n-spasce>
-        
-        <div class="nav" style="
-    --side-padding: 32px;
-     grid-template-columns: calc(240px) 1fr auto;
-     ">
+    <n-config-provider :theme="theme">
+        <n-card>
+            <n-spasce>
 
-            <div class="ui-logo">
-                <img src="../assets/img/log.png" />
-                <span>豚豚壁纸</span>
-            </div>
+                <n-space>
 
+                    <n-avatar size="medium" src="src/assets/img/log.png" />
+                    <!-- <div class="ui-logo">
+                        <img src="../assets/img/log.png" />
+                        <span>豚豚壁纸</span>
+                    </div> -->
 
-            <div style="display: flex; align-items: center;">
-                <div class="nav-menu">
-                    <a class="nav-picker" size="small" quaternary>
+                    <n-button text>
                         <RouterLink :to="'/'">首页</RouterLink>
-                    </a>
+                    </n-button>
 
-                    <a class="nav-picker" size="small" quaternary>
+                    <n-button text>
                         <RouterLink to="/search">搜索</RouterLink>
-                    </a>
+                    </n-button>
+                    
 
-                    <a class="nav-picker" size="small" quaternary>
+                    <n-button text>
+                        <RouterLink to="/search">喜欢</RouterLink>
+                    </n-button>
+                    
+
+
+
+                    <n-button text>
+                        <RouterLink :to="'/User'">我的</RouterLink>
+                    </n-button>
+
+                    <n-button text>
                         <RouterLink to="/settings">设置</RouterLink>
-                    </a>
+                    </n-button>
 
-                    <a class="nav-picker" size="small" quaternary>
+                    <n-button text>
                         <RouterLink to="/about">关于</RouterLink>
-                    </a>
-
-                </div>
-
-            </div>
+                    </n-button>
 
 
 
-
-
-            <div class="nav-end">
-
-                <a class="nav-picker" size="small" quaternary>
-                    GitHub
-                </a>
-                <a class="nav-picker padded" size="small" quaternary>
-                    1.0.0
-                </a>
-
-            </div>
+                    <n-space>
+                        <n-button @click="theme = darkTheme">
+                            深色
+                        </n-button>
+                        <n-button @click="theme = null">
+                            浅色
+                        </n-button>
+                    </n-space>
 
 
 
+                    <n-space>
+                        <n-text type="error">
+                            1.0
+                        </n-text>
 
-        </div>
+                    </n-space>
+
+                </n-space>
 
 
-    </n-spasce>
-</n-card>
+
+
+            </n-spasce>
+        </n-card>
+    </n-config-provider>
 </template>
 
 <script>
+import { defineComponent } from "vue";
+import { darkTheme } from 'naive-ui'
 
-export default ({
+export default defineComponent({
     data() {
         return {
+            darkTheme,
+            theme: null,
+            value: null
         };
     },
     methods: {

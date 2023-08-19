@@ -32,8 +32,6 @@ export default {
   created() {
     this.$vuetify.theme.dark = this.Defaultstate.theme.dark;
 
-    // console.log( parseInt( 24 /24 ))
-
   },
 
 };

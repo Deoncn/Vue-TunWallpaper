@@ -1,6 +1,7 @@
 import HomePage from '../components/views/HomePage.vue'
 import SearchPage from '../components/views/SearchPage.vue'
 import SettingsPage from '../components/views/SettingPage.vue'
+import userPage from "../components/views/UserPage.vue"
 import { createRouter, createWebHistory } from 'vue-router'
 
 
@@ -21,7 +22,7 @@ const router = createRouter({
       path: '/settings',
       name: 'settings',
       component: SettingsPage
-    }, 
+    },
     {
       path: '/about',
       name: 'about',
@@ -29,6 +30,11 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../components/views/AboutPage.vue')
+    },
+    {
+      path: '/user',
+      name: 'user',
+      component: userPage
     },
   ]
 })
