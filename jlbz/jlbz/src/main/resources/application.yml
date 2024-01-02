@@ -4,9 +4,10 @@
 server:
   port: 9001
   ssl:
-    key-store: classpath:noxus.dynv6.net.jks
+    key-store: classpath:keystore.jks
     key-store-password: 123456
     key-alias: noxus
+
 
 spring:
   #解决SpringBoot2.6.0与swagger冲突问题【原因是在springboot2.6.0中将SpringMVC 默认路径匹配策略从AntPathMatcher 更改为PathPatternParser，导致出错，解决办法是切换回原先的AntPathMatcher】
