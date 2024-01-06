@@ -18,7 +18,7 @@ export default {
         fileInfo: null,
         headers: [
             {
-                text: 'IMG-ID',
+                text: '图像ID',
                 align: 'start',
                 value: 'id',
             },
@@ -194,7 +194,6 @@ export default {
             }).then(res => {
                 console.log(res)
                 alert("上传成功")
-                //  https://deoncnone.oss-cn-chengdu.aliyuncs.com/2022-11-04/6fb5d35f61694aa1a4119155c8260fa5.jpg
                 this.editedItem.src = "https://deoncnone.oss-cn-chengdu.aliyuncs.com/" + this.dataObj.key
             }).catch(error => {
                 console.log(error)
@@ -273,6 +272,10 @@ export default {
                         <v-btn color="primary" class="mb-2" v-bind="attrs" v-on="on">
                             添加对象
                         </v-btn>
+
+                        <v-btn color="primary" class="mb-2" v-bind="attrs" v-on="on">
+                            批量删除
+                        </v-btn>
                     </template>
 
                     <v-card>
@@ -342,7 +345,7 @@ export default {
             </v-toolbar>
         </template>
         <template v-slot:[`item.actions`]="{ item }">
-            <v-icon small class="mr-2" @click="editItem(item)">
+            <v-icon small class="mr-2" @click="editItem(item)" >
                 mdi-pencil
             </v-icon>
             <v-icon small @click="deleteItem(item)">
