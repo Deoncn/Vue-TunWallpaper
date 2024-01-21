@@ -34,4 +34,4 @@ Lints and fixes files 👇
 
 ## 谁维护和参与项目
 
-[@Deoncn](github.com/deoncn)
+[@Deoncn](https://github.com/deoncn)
