@@ -45,83 +45,11 @@
             </v-row>
             <hr>
 
-            <v-row justify="center">
-              <v-col cols="12">
-                <div class="settings-panel">
-                  <v-row align="center">
-                    <v-col cols="11">
-                      新开页面
-                      <v-icon>style</v-icon>
-                      <div class="settings-panel-msg">开启后，点击任意小图，直接打开新开页面预览大图</div>
-                    </v-col>
-                    <v-col cols="1">
-                      <v-switch inset v-model="Defaultstate.detail"></v-switch>
-                    </v-col>
-                  </v-row>
-                </div>
-              </v-col>
-            </v-row>
-            <hr>
-
-            <v-row justify="center">
-              <v-col cols="12">
-                <div class="settings-panel">
-                  <v-row align="center">
-                    <v-col cols="11">
-                      切换动画
-                      <v-icon large>gif</v-icon>
-                      <div class="settings-panel-msg">开启后 当预览大图时左右切换时，出现滑动动画效果</div>
-                    </v-col>
-                    <v-col cols="1">
-                      <v-switch inset v-model="Defaultstate.animation"></v-switch>
-                    </v-col>
-                  </v-row>
-                </div>
-              </v-col>
-            </v-row>
-            <hr>
 
 
 
 
-            <v-row justify="center">
-              <v-col cols="12">
-                <div class="settings-panel">
-                  <v-row align="center">
-                    <v-col cols="11">
-                      高清模式
-                      <v-icon>hd</v-icon>
-                      <div class="settings-panel-msg">根据显示器适配高分辨率预览图</div>
-                    </v-col>
-                    <v-col cols="1">
-                      <v-switch inset v-model="Defaultstate.hdmode"></v-switch>
-                    </v-col>
-                  </v-row>
-                </div>
-              </v-col>
-            </v-row>
-            <hr>
 
-
-
-
-            <v-row justify="center">
-              <v-col cols="12">
-                <div class="settings-panel">
-                  <v-row align="center">
-                    <v-col cols="11">
-                      紧凑样式
-                      <v-icon>view_quilt</v-icon>
-                      <div class="settings-panel-msg">小图之间样式没有空白间隙，紧凑样式展示</div>
-                    </v-col>
-                    <v-col cols="1">
-                      <v-switch inset v-model="Defaultstate.compact"></v-switch>
-                    </v-col>
-                  </v-row>
-                </div>
-              </v-col>
-            </v-row>
-            <hr>
 
             <v-row justify="center">
               <v-col cols="12">

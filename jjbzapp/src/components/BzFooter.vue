@@ -1,7 +1,7 @@
 <template>
     <v-footer dark padless>
         <v-col class="text-center" cols="12">
-            <span>Copyright©2023 豚豚壁纸</span>
+            <span>Copyright©2024 豚豚壁纸</span>
 
             <span v-if="isShow"><a href="http://beian.miit.gov.cn" one-link-mark="yes"
                     target="_blank">沪ICP备18011999号</a></span>

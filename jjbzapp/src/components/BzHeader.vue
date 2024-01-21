@@ -23,18 +23,10 @@
                     <v-icon small color="green">search</v-icon> 搜索
                 </v-tab>
 
-                <v-tab to="/favorite">
-
-                    <v-icon small color="red">favorite_border</v-icon>
-                    喜欢
-                </v-tab>
-
-                <v-tab to="/user" class="tabs-float-right">
-                    <v-icon color="teal" small>person_outline</v-icon> 我的
-                </v-tab>
+                <v-tab to="/favorite"><v-icon small color="red">favorite_border</v-icon>喜欢</v-tab>
 
 
-                <v-tab to="/settings">
+                <v-tab to="/settings" class="tabs-float-right">
                     <v-icon color="cyan" small>settings</v-icon> 设置
                 </v-tab>
 
@@ -49,7 +41,6 @@
             </v-progress-linear>
         </v-container>
     </v-app-bar>
-
 </template>
 
 <script>

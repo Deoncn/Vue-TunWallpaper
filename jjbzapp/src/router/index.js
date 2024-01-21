@@ -29,10 +29,6 @@ const routes = [
 
 
     {
-        path: '/user',
-        component: () => import('../views/UserPage.vue')
-    },
-    {
         path: '/settings',
         component: () => import('../views/SettingPage.vue')
     },

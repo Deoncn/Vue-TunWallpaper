@@ -73,17 +73,17 @@ public class SystemController {
 
     /** * GET * http://localhost:9001/sms/system/download  */
     @ApiOperation("文件下载入口")
-    @GetMapping("/download")
+    // 暂时关闭
+//    @GetMapping("/download")
     public void headerImgDownload(HttpServletResponse response) throws Exception {
 
         response.reset();
         response.setContentType("application/octet-stream;charset=utf-8");
         response.setHeader("Content-disposition","attachment; filename=test.png");
 
-
         try (
             //  BufferedInputStream bis = new BufferedInputStream(new FileInputStream("static/upload/1b4b41f62862480b8c9dc479a5409da1.jpg"));
-                BufferedInputStream bis = new BufferedInputStream(new FileInputStream("static/upload/1b4b41f62862480b8c9dc479a5409da1.jpg"));
+                BufferedInputStream bis = new BufferedInputStream(new FileInputStream("https://deoncnone.oss-cn-chengdu.aliyuncs.com/2022-11-10/8538cab81566469a96d538e7d0b72f77.jpg"));
 
                 // 输出流
                 BufferedOutputStream bos = new BufferedOutputStream(response.getOutputStream());

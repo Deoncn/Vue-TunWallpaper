@@ -13,6 +13,7 @@ export default {
             host: "",
             // callback:'',
         },
+        singleSelect: true,
         dialog: false,
         dialogDelete: false,
         fileInfo: null,
@@ -259,24 +260,36 @@ export default {
 </script>
 
 <template>
-    <v-data-table :headers="headers" show-select :items="desserts" sort-by="calories" class="elevation-1">
+    <v-data-table :headers="headers" show-select :items="desserts" sort-by="calories" class="elevation-1" :single-select="singleSelect">
         <template v-slot:top>
             <v-toolbar flat>
                 <v-toolbar-title>数据库管理</v-toolbar-title>
                 <v-divider class="mx-4" inset vertical></v-divider>
                 <v-spacer></v-spacer>
-                
+
                 <v-dialog v-model="dialog" max-width="500px">
 
                     <template v-slot:activator="{ on, attrs }">
-                        <v-btn color="primary" class="mb-2" v-bind="attrs" v-on="on">
-                            添加对象
-                        </v-btn>
+                        <v-row justify="end">
+                            <v-col cols="12" sm="6" md="2">
 
-                        <v-btn color="primary" class="mb-2" v-bind="attrs" v-on="on">
-                            批量删除
-                        </v-btn>
+                                <v-btn color="primary" class="mb-2" v-bind="attrs" v-on="on">
+                                    添加对象
+                                </v-btn>
+                            </v-col>
+
+                            <v-col cols="12" sm="6" md="2">
+                                <v-switch v-model="singleSelect" label="单选化" class="pa-3"></v-switch>
+                            </v-col>
+                            
+
+                        </v-row>
+
+
+
+
                     </template>
+
 
                     <v-card>
                         <v-card-title>
@@ -300,8 +313,7 @@ export default {
                                         </v-text-field>
                                         <div v-if="lomtitle">
 
-                                            <v-file-input v-model="fileInfo" show-size counter outlined
-                                                label="FileUpload">
+                                            <v-file-input v-model="fileInfo" show-size counter outlined label="FileUpload">
                                             </v-file-input>
 
                                             <v-btn color="primary" @click="beforeUpload">上传</v-btn>
@@ -345,7 +357,7 @@ export default {
             </v-toolbar>
         </template>
         <template v-slot:[`item.actions`]="{ item }">
-            <v-icon small class="mr-2" @click="editItem(item)" >
+            <v-icon small class="mr-2" @click="editItem(item)">
                 mdi-pencil
             </v-icon>
             <v-icon small @click="deleteItem(item)">

@@ -4,6 +4,7 @@
 server:
   port: 9001
   ssl:
+    # jks 生成请参考：https://deoncn.github.io/posts/2024/01/03/JAVA-%E9%85%8D%E7%BD%AE-SSL.html ，每次更新服务器证书，都要更新后端的jks，并重新打包。
     key-store: classpath:keystore.jks
     key-store-password: 123456
     key-alias: noxus
