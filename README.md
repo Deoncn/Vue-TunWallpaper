@@ -27,11 +27,10 @@ Lints and fixes files 👇
 ——————backend（后端）
 
 
-## 用户能从何处获取项目的帮助
+## 能从何处获取项目的帮助
 
-学习更多的知识。
-
+## [@ISSUES](https://github.com/Deoncn/Vue-TunWallpaper/issues)
 
 ## 谁维护和参与项目
 
-[@Deoncn](https://github.com/deoncn)
+## [@Deoncn](https://github.com/deoncn)
