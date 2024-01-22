@@ -27,8 +27,8 @@ public class OssController {
     @GetMapping ("/policy")
     public Result policy(){
         // 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
-        String accessId = "LTAI5tEZqGzMEo59gSCmPVmE";
-        String accessKey = "TPKL8XkvBN5GuLcI6udg7HkfQcotqf";
+        String accessId = "阿里云 ACCESS 访问控制链";
+        String accessKey = "阿里云 ACCESS 访问控密码";
         // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。
         // deoncnone.oss-cn-chengdu.aliyuncs.com
         String endpoint = "oss-cn-chengdu.aliyuncs.com";
@@ -84,8 +84,8 @@ public class OssController {
         // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。关于其他Region对应的Endpoint信息，请参见访问域名和数据中心。
         String endpoint = "https://oss-cn-chengdu.aliyuncs.com";
         // 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
-        String accessKeyId = "LTAI5tEZqGzMEo59gSCmPVmE";
-        String accessKeySecret = "TPKL8XkvBN5GuLcI6udg7HkfQcotqf";
+        String accessId = "阿里云 ACCESS 访问控制链";
+        String accessKey = "阿里云 ACCESS 访问控密码";
         // 填写Bucket名称，例如examplebucket。
         String bucketName = "deoncnone";
         // 填写Object完整路径，例如exampledir/exampleobject.txt。Object完整路径中不能包含Bucket名称。
